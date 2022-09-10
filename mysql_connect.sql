@@ -25,9 +25,7 @@ row2 = row1.append({} ,
 
 row3 = row2.append({'NAME' : '--- UPDATE DATE ---',
                     'CREATE_DATE' : "-->",
-                    'LAST_CALL_DATE' : pd.datetime.now().strftime("%m/%d/%Y")} , 
+                    'UPDATE_DATE' : pd.datetime.now().strftime("%m/%d/%Y")} , 
                     ignore_index=True)
-
-#row3.to_csv('Ops Data.csv', index=False) #dulo lage #dulo 2
 
 row3.to_csv(process_id+'-'+process_name+'.csv', index=False)
