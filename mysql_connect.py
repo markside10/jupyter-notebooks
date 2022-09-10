@@ -16,7 +16,6 @@ process_id = '123' #PUT PROCESS ID
 conn=pymysql.connect(host='1.1.1.1',port=int(3306),user='username',passwd='password123',db='db_name')
 
 data=pd.read_sql_query("SELECT * from table" ,conn)
-#SELECT * FROM CREATED_TABLE
 
 row1 = data.append({} , 
                     ignore_index=True)
